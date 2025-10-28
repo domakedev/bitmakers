@@ -69,7 +69,7 @@ const Hero = () => {
         </div>
       </div>
       {/* Proyectos */}
-      <div id="proyectos" className="mt-12">
+      <div id="proyectos" className="py-10 md:pt-14">
         {/* Mobile: 1 imagen completa arriba, 2 abajo */}
         <div className="md:hidden grid grid-cols-1 gap-6">
           {/* Primera imagen completa */}
