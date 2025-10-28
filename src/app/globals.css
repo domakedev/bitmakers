@@ -5,13 +5,6 @@
   --foreground: #171717;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
@@ -23,4 +16,21 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer base {
+  @font-face {
+    font-family: 'Aspekta'; /* Este es el nombre que usarás en la config */
+    src: url('/fonts/Aspekta/Aspekta-400.ttf') format('truetype');
+    font-weight: 400; /* 400 es 'normal' */
+    font-style: normal;
+    font-display: swap; /* Buena práctica para el rendimiento */
+  }
+  @font-face {
+    font-family: 'Aspekta';
+    src: url('/fonts/Aspekta/Aspekta-450.ttf') format('truetype');
+    font-weight: 450;
+    font-style: normal;
+    font-display: swap;
+  }
 }
