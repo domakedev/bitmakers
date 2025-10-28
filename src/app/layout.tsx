@@ -38,7 +38,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${myAspekta.className} flex-1 flex-col`}>
         <Header />
-        <main className="flex-1">{children}</main>
+        <main className="flex-1 px-6 max-w-5xl mx-auto">{children}</main>
         <Footer />
       </body>
     </html>

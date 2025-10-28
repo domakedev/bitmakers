@@ -1,7 +1,7 @@
 "use client";
-import Link from "next/link";
 import React, { useState } from "react";
 import { CgMenuMotion, CgClose } from "react-icons/cg";
+import Button from "../../Button/Button";
 
 const naviItems = [
   { title: "Equipo", href: "#" },
@@ -53,13 +53,11 @@ const HeaderMobile = () => {
                     {item.title}
                   </div>
                 ))}
-                <Link
+                <Button
+                  title="Contáctanos"
                   href="https://wa.me/51948240027?text=Hola%20tengo%20esta%20idea%20que%20me%20gustaria%20desarrollar%20con%20ustedes..."
-                  className="hover:underline cursor-pointer rounded-full bg-gray-900 text-white px-4 py-2 text-base font-semibold text-center"
-                  target="__blank"
-                >
-                  Contáctanos
-                </Link>
+                  variant="main"
+                />
               </div>
             </div>
           </div>

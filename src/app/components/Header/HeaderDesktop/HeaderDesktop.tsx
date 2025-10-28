@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Button from "../../Button/Button";
 
 const naviItems = [
   { title: "Equipo", href: "#" },
@@ -18,13 +18,12 @@ const HeaderDesktop = () => {
         ))}
       </div>
       <div className="flex items-center">
-        <Link
+        <Button
+          title="Contáctanos"
           href="https://wa.me/51948240027?text=Hola%20tengo%20esta%20idea%20que%20me%20gustaria%20desarrollar%20con%20ustedes..."
-          className="rounded-full bg-gray-900 text-white px-10 py-4 text-base font-semibold leading-[16px]"
-          target="__blank"
-        >
-          Contáctanos
-        </Link>
+          variant="main"
+          className="px-10 py-4 leading-[16px]"
+        />
       </div>
     </div>
   );
